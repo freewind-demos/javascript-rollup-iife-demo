@@ -2,7 +2,8 @@
 ----------------
 
 ```
-define(['lodash'], function (lodash) { 'use strict';
+(function (lodash) {
+    'use strict';
 
     function hello (name) {
         return 'Hello, ' + lodash.capitalize(name) + '!'
@@ -10,5 +11,5 @@ define(['lodash'], function (lodash) { 'use strict';
 
     hello('rollup');
 
-});
+}(_));
 ```
